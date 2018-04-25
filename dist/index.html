@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>kappe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- adding main.min.css file -->       
+    <link rel="stylesheet" href="css/main.min.css"> 
+</head>
+<body>
+<div class="global-wrapper">	
+<!-- adding html files -->
+<div class="menu">
+
+	<!-- Header -->
+	<header class="menu-header">
+
+		<!-- Logo -->	
+		<div class="menu-logo">
+			<div class="menu-logo__items">
+				<span class="menu-logo__item first"></span>
+				<span class="menu-logo__item second"></span>
+				<span class="menu-logo__item third"></span>
+			</div>			
+			<a class="menu-logo__name" href="index.html">kappe</a>		
+		</div>
+
+		<!-- Mobile menu -->
+		<div class="menu-mobile js-menu-mobile">
+			<span class="menu-mobile__box js-menu-mobile__box"></span>
+			<span class="menu-mobile__box js-menu-mobile__box"></span>
+			<span class="menu-mobile__box js-menu-mobile__box"></span>
+			<span class="menu-mobile__box js-menu-mobile__box"></span>
+			<span class="menu-mobile__box js-menu-mobile__box"></span>
+			<span class="menu-mobile__box js-menu-mobile__box"></span>
+			<span class="menu-mobile__box js-menu-mobile__box"></span>
+			<span class="menu-mobile__box js-menu-mobile__box"></span>
+			<span class="menu-mobile__box js-menu-mobile__box"></span>
+		</div>
+	</header>	
+	
+	<!-- Menu section - navigation, filter & social-media -->
+	<div class="menu-section js-menu-section">
+
+		<!-- Navigation -->	
+		<nav class="menu-nav js-menu-nav">
+			<a class="menu-nav__link js-menu-nav__item_initial" href="index.html">Home</a>	
+			<a class="menu-nav__link" href="work.html">Work</a>
+			<a class="menu-nav__link" href="about.html">About</a>
+			<a class="menu-nav__link" href="blog.html">Blog</a>
+			<a class="menu-nav__link" href="404.html">Services</a>
+			<a class="menu-nav__link" href="contact.html">Contact</a>
+		</nav>		
+
+		<!-- Filter -->
+		<div class="menu-filter js-menu-filter">
+			<span class="menu-filter__title js-menu-filter__title">Filter</span>
+			<nav class="menu-filter__nav js-menu-filter__nav">			
+				<button class="menu-filter__nav-item active" data-filter="*">All works</button>
+				<button class="menu-filter__nav-item" data-filter=".web-design">web design</button>
+				<button class="menu-filter__nav-item" data-filter=".illustration">illustration</button>
+				<button class="menu-filter__nav-item" data-filter=".photography">photography</button>
+				<button class="menu-filter__nav-item" data-filter=".wallpapers">wallpapers</button>
+				<button class="menu-filter__nav-item" data-filter=".brochures">brochures</button>
+			</nav>
+		</div>	
+
+		<!-- Social-media -->
+		<div class="menu-sm">
+			<span class="menu-sm__title js-menu-sm__title">Find us</span>
+			<ul class="menu-sm__list js-menu-sm__list">
+				<li class="menu-sm__list-item"><a class="menu-sm__link flickr" href="#"></a></li>
+				<li class="menu-sm__list-item"><a class="menu-sm__link google" href="#"></a></li>
+				<li class="menu-sm__list-item"><a class="menu-sm__link twitter" href="#"></a></li>
+				<li class="menu-sm__list-item"><a class="menu-sm__link pinterest" href="#"></a></li>
+				<li class="menu-sm__list-item"><a class="menu-sm__link dribbble" href="#"></a></li>
+				<li class="menu-sm__list-item"><a class="menu-sm__link behance" href="#"></a></li>
+				<li class="menu-sm__list-item"><a class="menu-sm__link facebook" href="#"></a></li>
+			</ul>
+		</div>
+
+		<!-- Copyright -->			
+		<span class="menu-copyright">© 2014 Kappe, All Rights Reserved</span>	
+	</div>
+</div>
+<section class="home-section">
+<!-- Importing menu section -->	
+<div class="info">
+
+	<!-- Info box -->	
+	<a class="info-box js-info-box" href="#">
+		<span class="info-box__frame">
+			<svg class="info-box__icon">
+    			<use xlink:href="svg/sprite.svg#info-icon"></use>
+			</svg>
+		</span>
+	</a>	
+	
+	<!-- Info list -->
+	<ul class="info-list js-info-list">
+		<li class="info-list__item">
+			<svg class="info-list__icon phone">
+    			<use xlink:href="svg/sprite.svg#phone-icon"></use>
+			</svg>
+			<a class="info-list__text" href="tel:9930 1234 5679">9930 1234 5679</a>
+		</li>
+		<li class="info-list__item">
+			<svg class="info-list__icon mail">
+    			<use xlink:href="svg/sprite.svg#envelope-icon"></use>
+			</svg>
+			<a class="info-list__text" href="mailto:contact@domain.com?Subject=Hello%20there">contact@domain.com</a>
+		</li>
+		<li class="info-list__item">
+			<svg class="info-list__icon address">
+    			<use xlink:href="svg/sprite.svg#home-icon"></use>
+			</svg>
+			<span class="info-list__text">street address example</span>
+		</li>
+	</ul>
+</div>
+
+	<div class="home-grid js-home-grid">
+
+		<!-- Masonry grid sizer -->	
+		<div class="home-grid__sizer"></div>
+
+		<!-- Item #1 -->
+		<div class="home-grid__item photography">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-1">
+				<img class="home-grid__item-img" src="img/home/home-img-1.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>		
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>			
+		</div>
+
+		<!-- Item #2 -->
+		<div class="home-grid__item brochures illustration photography">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-2">
+				<img class="home-grid__item-img" src="img/home/home-img-2.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>		
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>			
+		</div>
+
+		<!-- Item #3 -->
+		<div class="home-grid__item web-design">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-3">
+				<img class="home-grid__item-img" src="img/home/home-img-3.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>		
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>			
+		</div>
+
+		<!-- Item #4 -->
+		<div class="home-grid__item wallpapers">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-4">
+				<img class="home-grid__item-img" src="img/home/home-img-4.gif" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>		
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>			
+		</div>
+
+		<!-- Item #5 -->
+		<div class="home-grid__item brochures illustration web-design">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-5">
+				<img class="home-grid__item-img" src="img/home/home-img-5.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>		
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>			
+		</div>
+
+		<!-- Item #6 -->
+		<div class="home-grid__item brochures">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-6">
+				<img class="home-grid__item-img" src="img/home/home-img-6.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>		
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>			
+		</div>
+
+		<!-- Item #7 -->
+		<div class="home-grid__item illustration">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-7">
+				<img class="home-grid__item-img" src="img/home/home-img-7.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>		
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>			
+		</div>
+
+		<!-- Item #8 -->
+		<div class="home-grid__item illustration">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-8">
+				<img class="home-grid__item-img" src="img/home/home-img-8.png" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>		
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>			
+		</div>
+
+		<!-- Item #9 -->
+		<div class="home-grid__item web-design">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-9">
+				<img class="home-grid__item-img" src="img/home/home-img-9.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>		
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>			
+		</div>
+
+		<!-- Item #10 -->
+		<div class="home-grid__item wallpapers">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-10">
+				<img class="home-grid__item-img" src="img/home/home-img-10.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>		
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>			
+		</div>
+
+		<!-- Item #11 -->
+		<div class="home-grid__item illustration photography">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-11">
+				<img class="home-grid__item-img" src="img/home/home-img-11.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>		
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>			
+		</div>
+
+		<!-- Item #12 -->
+		<div class="home-grid__item brochures">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-12">
+				<img class="home-grid__item-img" src="img/home/home-img-12.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>		
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>			
+		</div>
+
+		<!-- Item #13 -->
+		<div class="home-grid__item brochures web-design">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-13">
+				<img class="home-grid__item-img" src="img/home/home-img-13.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>		
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>			
+		</div>
+
+		<!-- Item #14 -->
+		<div class="home-grid__item illustration">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-14">
+				<img class="home-grid__item-img" src="img/home/home-img-14.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>		
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>			
+		</div>
+
+		<!-- Item #15 -->
+		<div class="home-grid__item web-design">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-15">
+				<img class="home-grid__item-img" src="img/home/home-img-15.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>		
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>			
+		</div>
+
+		<!-- Item #16 -->
+		<div class="home-grid__item wallpapers">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-16">
+				<img class="home-grid__item-img" src="img/home/home-img-16.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>		
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>			
+		</div>
+		
+		<!-- Ctlr+C - Ctrl+V to check reveal-on-scroll effect -->
+		<!-- Item #1 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-1">
+				<img class="home-grid__item-img" src="img/home/home-img-1.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #2 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-2">
+				<img class="home-grid__item-img" src="img/home/home-img-2.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #3 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-3">
+				<img class="home-grid__item-img" src="img/home/home-img-3.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #4 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-4">
+				<img class="home-grid__item-img" src="img/home/home-img-4.gif" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #5 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-5">
+				<img class="home-grid__item-img" src="img/home/home-img-5.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #6 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-6">
+				<img class="home-grid__item-img" src="img/home/home-img-6.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #7 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-7">
+				<img class="home-grid__item-img" src="img/home/home-img-7.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #8 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-8">
+				<img class="home-grid__item-img" src="img/home/home-img-8.png" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #9 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-9">
+				<img class="home-grid__item-img" src="img/home/home-img-9.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #10 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-10">
+				<img class="home-grid__item-img" src="img/home/home-img-10.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #11 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-11">
+				<img class="home-grid__item-img" src="img/home/home-img-11.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #12 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-12">
+				<img class="home-grid__item-img" src="img/home/home-img-12.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #13 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-13">
+				<img class="home-grid__item-img" src="img/home/home-img-13.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #14 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-14">
+				<img class="home-grid__item-img" src="img/home/home-img-14.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #15 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-15">
+				<img class="home-grid__item-img" src="img/home/home-img-15.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #16 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-16">
+				<img class="home-grid__item-img" src="img/home/home-img-16.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #1 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-1">
+				<img class="home-grid__item-img" src="img/home/home-img-1.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #2 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-2">
+				<img class="home-grid__item-img" src="img/home/home-img-2.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #3 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-3">
+				<img class="home-grid__item-img" src="img/home/home-img-3.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #4 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-4">
+				<img class="home-grid__item-img" src="img/home/home-img-4.gif" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #5 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-5">
+				<img class="home-grid__item-img" src="img/home/home-img-5.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #6 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-6">
+				<img class="home-grid__item-img" src="img/home/home-img-6.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #7 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-7">
+				<img class="home-grid__item-img" src="img/home/home-img-7.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #8 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-8">
+				<img class="home-grid__item-img" src="img/home/home-img-8.png" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #9 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-9">
+				<img class="home-grid__item-img" src="img/home/home-img-9.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #10 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-10">
+				<img class="home-grid__item-img" src="img/home/home-img-10.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #11 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-11">
+				<img class="home-grid__item-img" src="img/home/home-img-11.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #12 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-12">
+				<img class="home-grid__item-img" src="img/home/home-img-12.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #13 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-13">
+				<img class="home-grid__item-img" src="img/home/home-img-13.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #14 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-14">
+				<img class="home-grid__item-img" src="img/home/home-img-14.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #15 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-15">
+				<img class="home-grid__item-img" src="img/home/home-img-15.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+
+		<!-- Item #16 -->
+		<div class="home-grid__item">
+			<a class="home-grid__item-link js-home-grid__item-link" href="#home-post-16">
+				<img class="home-grid__item-img" src="img/home/home-img-16.jpg" alt="">
+				<span class="home-grid__item-title">Cool App Design</span>
+				<span class="home-grid__item-subtitle">development, mobile</span>
+				<span class="home-grid__item-arrow">
+					<svg class="home-grid__item-icon">
+    					<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+	</div>	
+</section>
+<!-- Post #1 -->
+<div class="home-post-wrapper"><!-- wrapper to hide popup for Fancybox -->
+	<div class="home-post" id="home-post-1">
+		<div class="home-post__content"><!-- additional div inside popup to make flex work -->
+			<div class="home-post__img-wrapper">
+				<img class="home-post__img" src="img/home/home-img-1-full.jpg" alt="">
+			</div>			
+			<div class="home-post__info">
+				<h2 class="home-post__title">Lorem ipsum dolor sit amet</h2>
+				<p class="home-post__text">Architecto autem nisi ipsam eos, recusandae, dolores minus quia iure est, quisquam dolore sequi illo nemo? Maiores distinctio corporis odio consequuntur expedita sapiente eligendi excepturi. Totam!</p>
+				<p class="home-post__text">Facilis in, voluptates inventore veniam obcaecati omnis laudantium optio culpa doloribus, dignissimos quod, quos numquam voluptatibus? Et labore quasi reprehenderit sed nihil.</p>
+				<ul class="home-post__links">
+					<li><a class="home-post__link flickr" href="#"></a></li>			
+					<li><a class="home-post__link dribbble" href="#"></a></li>
+					<li><a class="home-post__link behance" href="#"></a></li>		
+				</ul>
+				<a class="home-post__comments" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					5 comments
+				</a>
+				<a class="home-post__date" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+					<time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Post #2 -->
+<div class="home-post-wrapper">
+	<div class="home-post" id="home-post-2">
+		<div class="home-post__content">
+			<div class="home-post__img-wrapper">
+				<img class="home-post__img" src="img/home/home-img-2-full.jpg" alt="">
+			</div>			
+			<div class="home-post__info">
+				<h2 class="home-post__title">Lorem ipsum dolor</h2>
+				<p class="home-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, a deleniti sequi, ipsum laboriosam placeat, eveniet esse earum accusantium fugiat vero provident animi hic est blanditiis, tenetur perspiciatis tempore.</p>				
+				<ul class="home-post__links">
+					<li><a class="home-post__link flickr" href="#"></a></li>			
+					<li><a class="home-post__link dribbble" href="#"></a></li>
+					<li><a class="home-post__link behance" href="#"></a></li>		
+				</ul>
+				<a class="home-post__comments" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					5 comments
+				</a>
+				<a class="home-post__date" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+					<time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Post #3 -->
+<div class="home-post-wrapper">
+	<div class="home-post" id="home-post-3">
+		<div class="home-post__content">
+			<div class="home-post__img-wrapper">
+				<img class="home-post__img" src="img/home/home-img-3-full.jpg" alt="">
+			</div>			
+			<div class="home-post__info">
+				<h2 class="home-post__title">Harum, dolorum?</h2>
+				<p class="home-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil aut quis dicta ea nemo doloribus dolorum tenetur odio. Totam sequi aliquam vero architecto, dicta maiores temporibus magnam nihil pariatur odit, impedit voluptate!</p>	
+				<p class="home-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quis unde iste debitis, ad odio ab velit.</p>			
+				<ul class="home-post__links">
+					<li><a class="home-post__link flickr" href="#"></a></li>			
+					<li><a class="home-post__link dribbble" href="#"></a></li>
+					<li><a class="home-post__link behance" href="#"></a></li>		
+				</ul>
+				<a class="home-post__comments" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					5 comments
+				</a>
+				<a class="home-post__date" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+					<time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Post #4 -->
+<div class="home-post-wrapper">
+	<div class="home-post" id="home-post-4">
+		<div class="home-post__content">
+			<div class="home-post__img-wrapper">
+				<img class="home-post__img" src="img/home/home-img-4-full.gif" alt="">
+			</div>			
+			<div class="home-post__info">
+				<h2 class="home-post__title">Lorem ipsum dolor sit amet, consectetur adipisicing</h2>
+				<p class="home-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit vel odio, omnis deserunt. Sint suscipit reprehenderit explicabo. Excepturi autem quia, impedit iste ipsum nisi.</p>			
+				<ul class="home-post__links">
+					<li><a class="home-post__link flickr" href="#"></a></li>			
+					<li><a class="home-post__link dribbble" href="#"></a></li>
+					<li><a class="home-post__link behance" href="#"></a></li>		
+				</ul>
+				<a class="home-post__comments" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					5 comments
+				</a>
+				<a class="home-post__date" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+					<time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Post #5 -->
+<div class="home-post-wrapper">
+	<div class="home-post" id="home-post-5">
+		<div class="home-post__content">
+			<div class="home-post__img-wrapper">
+				<img class="home-post__img" src="img/home/home-img-5-full.jpg" alt="">
+			</div>			
+			<div class="home-post__info">
+				<h2 class="home-post__title">Odit fuga repellat ab rem</h2>
+				<p class="home-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit fuga repellat ab rem consequuntur earum illum, impedit.</p>
+				<p class="home-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolorem nihil cum, omnis numquam optio temporibus molestiae libero voluptatem! Ipsa.</p>
+				<p class="home-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sed eaque voluptates dolorum consequatur. Lorem ipsum dolor sit amet, consectetur.</p>				
+				<ul class="home-post__links">
+					<li><a class="home-post__link flickr" href="#"></a></li>			
+					<li><a class="home-post__link dribbble" href="#"></a></li>
+					<li><a class="home-post__link behance" href="#"></a></li>		
+				</ul>
+				<a class="home-post__comments" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					5 comments
+				</a>
+				<a class="home-post__date" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+					<time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Post #6 -->
+<div class="home-post-wrapper">
+	<div class="home-post" id="home-post-6">
+		<div class="home-post__content">
+			<div class="home-post__img-wrapper">
+				<img class="home-post__img" src="img/home/home-img-6-full.jpg" alt="">
+			</div>			
+			<div class="home-post__info">
+				<h2 class="home-post__title">Lorem ipsum dolor</h2>
+				<p class="home-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem sapiente ex praesentium minus doloribus soluta, totam officia veritatis rem.</p>				
+				<ul class="home-post__links">
+					<li><a class="home-post__link flickr" href="#"></a></li>			
+					<li><a class="home-post__link dribbble" href="#"></a></li>
+					<li><a class="home-post__link behance" href="#"></a></li>		
+				</ul>
+				<a class="home-post__comments" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					5 comments
+				</a>
+				<a class="home-post__date" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+					<time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Post #7 -->
+<div class="home-post-wrapper">
+	<div class="home-post" id="home-post-7">
+		<div class="home-post__content">
+			<div class="home-post__img-wrapper">
+				<img class="home-post__img" src="img/home/home-img-7-full.jpg" alt="">
+			</div>			
+			<div class="home-post__info">
+				<h2 class="home-post__title">Sint, mollitia itaque earum reiciendis</h2>
+				<p class="home-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, consequatur. Amet repellat similique harum odit id repellendus soluta reiciendis iste, ullam laboriosam quos accusantium possimus, ratione doloribus esse ab ea. Sint, mollitia itaque earum reiciendis tempore ipsum minus!.</p>				
+				<ul class="home-post__links">
+					<li><a class="home-post__link flickr" href="#"></a></li>			
+					<li><a class="home-post__link dribbble" href="#"></a></li>
+					<li><a class="home-post__link behance" href="#"></a></li>		
+				</ul>
+				<a class="home-post__comments" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					5 comments
+				</a>
+				<a class="home-post__date" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+					<time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Post #8 -->
+<div class="home-post-wrapper">
+	<div class="home-post" id="home-post-8">
+		<div class="home-post__content">
+			<div class="home-post__img-wrapper">
+				<img class="home-post__img" src="img/home/home-img-8-full.png" alt="">
+			</div>			
+			<div class="home-post__info">
+				<h2 class="home-post__title">Lorem ipsum dolor sit amet</h2>
+				<p class="home-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, a deleniti sequi, ipsum laboriosam placeat, eveniet esse earum accusantium fugiat vero provident animi hic est blanditiis, tenetur perspiciatis tempore.</p>	
+				<p class="home-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, a deleniti sequi, ipsum laboriosam placeat, eveniet esse earum accusantium fugiat vero provident animi hic est blanditiis, tenetur perspiciatis tempore.</p>			
+				<ul class="home-post__links">
+					<li><a class="home-post__link flickr" href="#"></a></li>			
+					<li><a class="home-post__link dribbble" href="#"></a></li>
+					<li><a class="home-post__link behance" href="#"></a></li>		
+				</ul>
+				<a class="home-post__comments" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					5 comments
+				</a>
+				<a class="home-post__date" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+					<time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Post #9 -->
+<div class="home-post-wrapper">
+	<div class="home-post" id="home-post-9">
+		<div class="home-post__content">
+			<div class="home-post__img-wrapper">
+				<img class="home-post__img" src="img/home/home-img-9-full.jpg" alt="">
+			</div>			
+			<div class="home-post__info">
+				<h2 class="home-post__title">Quam laborum sunt eligendi harum</h2>
+				<p class="home-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, veritatis molestiae tenetur.</p>	
+				<p class="home-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium debitis odit ipsum optio ex excepturi quam, distinctio deleniti eos ducimus, reprehenderit, minima dolores voluptatem ut commodi.</p>				
+				<ul class="home-post__links">
+					<li><a class="home-post__link flickr" href="#"></a></li>			
+					<li><a class="home-post__link dribbble" href="#"></a></li>
+					<li><a class="home-post__link behance" href="#"></a></li>		
+				</ul>
+				<a class="home-post__comments" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					5 comments
+				</a>
+				<a class="home-post__date" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+					<time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Post #10 -->
+<div class="home-post-wrapper">
+	<div class="home-post" id="home-post-10">
+		<div class="home-post__content">
+			<div class="home-post__img-wrapper">
+				<img class="home-post__img" src="img/home/home-img-10-full.jpg" alt="">
+			</div>			
+			<div class="home-post__info">
+				<h2 class="home-post__title">Lorem ipsum dolor</h2>
+				<p class="home-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, a deleniti sequi, ipsum laboriosam placeat, eveniet esse earum accusantium fugiat vero provident animi hic est blanditiis, tenetur perspiciatis tempore. Lorem ipsum dolor sit amet, consectetur adipisicing.</p>						
+				<ul class="home-post__links">
+					<li><a class="home-post__link flickr" href="#"></a></li>			
+					<li><a class="home-post__link dribbble" href="#"></a></li>
+					<li><a class="home-post__link behance" href="#"></a></li>		
+				</ul>
+				<a class="home-post__comments" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					5 comments
+				</a>
+				<a class="home-post__date" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+					<time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Post #11 -->
+<div class="home-post-wrapper">
+	<div class="home-post" id="home-post-11">
+		<div class="home-post__content">
+			<div class="home-post__img-wrapper">
+				<img class="home-post__img" src="img/home/home-img-11-full.jpg" alt="">
+			</div>			
+			<div class="home-post__info">
+				<h2 class="home-post__title">Pariatur, adipisci, modi!</h2>
+				<p class="home-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, a deleniti sequi, ipsum laboriosam placeat, eveniet esse earum accusantium fugiat vero provident animi hic est blanditiis, tenetur perspiciatis tempore.</p>	
+				<p class="home-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam odit numquam, nostrum. Quos est dolores explicabo quisquam!</p>			
+				<ul class="home-post__links">
+					<li><a class="home-post__link flickr" href="#"></a></li>			
+					<li><a class="home-post__link dribbble" href="#"></a></li>
+					<li><a class="home-post__link behance" href="#"></a></li>		
+				</ul>
+				<a class="home-post__comments" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					5 comments
+				</a>
+				<a class="home-post__date" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+					<time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Post #12 -->
+<div class="home-post-wrapper">
+	<div class="home-post" id="home-post-12">
+		<div class="home-post__content">
+			<div class="home-post__img-wrapper">
+				<img class="home-post__img" src="img/home/home-img-12-full.jpg" alt="">
+			</div>			
+			<div class="home-post__info">
+				<h2 class="home-post__title">Lorem ipsum dolor sit</h2>
+				<p class="home-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, a deleniti sequi, ipsum laboriosam placeat, eveniet esse earum accusantium fugiat vero provident animi hic est blanditiis, tenetur perspiciatis tempore.</p>				
+				<ul class="home-post__links">
+					<li><a class="home-post__link flickr" href="#"></a></li>			
+					<li><a class="home-post__link dribbble" href="#"></a></li>
+					<li><a class="home-post__link behance" href="#"></a></li>		
+				</ul>
+				<a class="home-post__comments" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					5 comments
+				</a>
+				<a class="home-post__date" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+					<time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Post #13 -->
+<div class="home-post-wrapper">
+	<div class="home-post" id="home-post-13">
+		<div class="home-post__content">
+			<div class="home-post__img-wrapper">
+				<img class="home-post__img" src="img/home/home-img-13-full.jpg" alt="">
+			</div>			
+			<div class="home-post__info">
+				<h2 class="home-post__title">Lorem ipsum dolor</h2>
+				<p class="home-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos atque, id porro vitae recusandae, non.</p>
+				<p class="home-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quod modi, voluptas ab. Atque, vel. Iure repudiandae aliquid accusantium iste?</p>		
+				<ul class="home-post__links">
+					<li><a class="home-post__link flickr" href="#"></a></li>			
+					<li><a class="home-post__link dribbble" href="#"></a></li>
+					<li><a class="home-post__link behance" href="#"></a></li>		
+				</ul>
+				<a class="home-post__comments" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					5 comments
+				</a>
+				<a class="home-post__date" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+					<time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Post #14 -->
+<div class="home-post-wrapper">
+	<div class="home-post" id="home-post-14">
+		<div class="home-post__content">
+			<div class="home-post__img-wrapper">
+				<img class="home-post__img" src="img/home/home-img-14-full.jpg" alt="">
+			</div>			
+			<div class="home-post__info">
+				<h2 class="home-post__title">Lorem ipsum dolor.</h2>
+				<p class="home-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam sed consectetur ab qui non dolorem molestias libero delectus rerum facere provident perspiciatis id ipsum, labore itaque amet ea quo, nulla unde nisi nobis animi. Obcaecati magnam, non ullam aut officia repellendus eius?</p>				
+				<ul class="home-post__links">
+					<li><a class="home-post__link flickr" href="#"></a></li>			
+					<li><a class="home-post__link dribbble" href="#"></a></li>
+					<li><a class="home-post__link behance" href="#"></a></li>		
+				</ul>
+				<a class="home-post__comments" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					5 comments
+				</a>
+				<a class="home-post__date" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+					<time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Post #15 -->
+<div class="home-post-wrapper">
+	<div class="home-post" id="home-post-15">
+		<div class="home-post__content">
+			<div class="home-post__img-wrapper">
+				<img class="home-post__img" src="img/home/home-img-15-full.jpg" alt="">
+			</div>			
+			<div class="home-post__info">
+				<h2 class="home-post__title">Lorem ipsum dolor sit amet, consectetur</h2>
+				<p class="home-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae ducimus voluptatum laudantium. Quidem quibusdam incidunt et odit expedita repudiandae asperiores, saepe sapiente aliquam dignissimos itaque reprehenderit culpa, cupiditate vitae facilis?</p>				
+				<ul class="home-post__links">
+					<li><a class="home-post__link flickr" href="#"></a></li>			
+					<li><a class="home-post__link dribbble" href="#"></a></li>
+					<li><a class="home-post__link behance" href="#"></a></li>		
+				</ul>
+				<a class="home-post__comments" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					5 comments
+				</a>
+				<a class="home-post__date" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+					<time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Post #16 -->
+<div class="home-post-wrapper">
+	<div class="home-post" id="home-post-16">
+		<div class="home-post__content">
+			<div class="home-post__img-wrapper">
+				<img class="home-post__img" src="img/home/home-img-16-full.jpg" alt="">
+			</div>			
+			<div class="home-post__info">
+				<h2 class="home-post__title">Lorem ipsum dolor</h2>
+				<p class="home-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, a deleniti sequi, ipsum laboriosam placeat, eveniet esse earum accusantium fugiat vero provident animi hic est blanditiis, tenetur perspiciatis tempore.</p>				
+				<ul class="home-post__links">
+					<li><a class="home-post__link flickr" href="#"></a></li>			
+					<li><a class="home-post__link dribbble" href="#"></a></li>
+					<li><a class="home-post__link behance" href="#"></a></li>		
+				</ul>
+				<a class="home-post__comments" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					5 comments
+				</a>
+				<a class="home-post__date" href="#">
+					<svg class="home-post__icon">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+					<time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<!-- adding main.min.js file -->	
+<script src="js/main.min.js"></script>
+</body>
+</html>

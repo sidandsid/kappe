@@ -1,0 +1,169 @@
+.home-post-wrapper{ 
+	display: none;
+} 
+
+.home-post{	
+	position: absolute;	
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;	
+	width: 100vw;	
+	background-color: rgba($bg-color-dark, .9);
+	padding: 2%;
+	@include break(tablet-l){ min-height: 100vh; }	
+	
+	&__content{		
+		@include size(100%, 100%);
+		@include break(tablet-l){ @include flex(row, space-between); }							
+	}
+
+	&__img-wrapper{			
+		overflow: hidden;
+		@include break-max(tablet-l){ margin-bottom: 25px; }
+
+		@include break(tablet-l){ 
+			@include size(69%, 100%); 
+			position: relative;				
+		}	
+	}
+
+	&__img{			
+		@include size(100%, 100%);
+		object-fit: contain;
+		vertical-align: bottom;
+
+		@include animation(home-post__img, .55s, ease, 1){
+			@keyframes home-post__img{
+				0%{	
+					@include size(50%, 80%); 
+					position: absolute;	
+					opacity: 0;
+					bottom: 0;
+					right: 0;
+				}
+
+				100%{ 
+					@include size(100%, 100%); 
+					position: absolute;	
+					opacity: 1;
+					bottom: 0;
+					right: 0;
+				}
+			}
+		}					
+	}
+	
+	&__info{
+		display: flex;
+		flex-wrap: wrap;
+		align-content: flex-start;	
+		margin-bottom: 15px;
+		@include break(tablet-l){ @include size(29%, 100%); }				
+	}
+
+	&__title{
+		@include font(20px, $text-color-light, $font-thin);
+		position: relative;		
+		letter-spacing: 1px;
+		margin-bottom: 45px;
+		@include break(tablet-l){ font-size: 24px; }	
+
+		@include animation(home-post__title, .55s, linear, 1){
+			@keyframes home-post__title{
+				0%{ transform: translate(0px, 35px); opacity: 0; }
+				50%{ transform: translate(0px, 0px); opacity: .5; }
+				100%{ opacity: 1; }
+			}
+		}
+		
+		&:after{
+			@include size(60px, 2px);
+			position: absolute;
+			content: '';
+			bottom: -20px;
+			left: 0;			
+			background-color: $text-color-light;			
+		}
+	}
+
+	&__text{
+		@include font(14px, $text-color-light, $font-thin);
+		display: block;		
+		line-height: 130%;
+		margin-bottom: 20px;
+		@include break(tablet-l){ font-size: 16px; }
+
+		@include animation(home-post__text, .55s, linear, 1){
+			@keyframes home-post__text{
+				0%{ transform: translate(0px, 35px); opacity: 0; }
+				55%{ transform: translate(0px, 0px); opacity: .5; }
+				100%{ opacity: 1; }
+			}
+		}
+	}
+
+	&__links{
+		display: flex;
+		margin-right: 15px;	
+
+		@include animation(home-post__links, .55s, linear, 1){
+			@keyframes home-post__links{
+				0%{ transform: translate(0px, 30px); opacity: 0; }
+				65%{  transform: translate(0px, 0px); opacity: .3; }
+				100%{	opacity: 1; }
+			}
+		}		
+	}
+
+	&__link{
+		@extend %sm-icon;
+		margin-right: 10px;
+	}
+
+	&__icon{
+		@include size(15px, 15px);
+		fill: $theme-color;
+		margin-right: 3px;
+	}
+
+	&__comments{
+		@include font(12px, $theme-color, $font-thin);
+		margin: 7px 13px 5px 0;
+
+		@include animation(home-post__comments, .55s, linear, 1){
+			@keyframes home-post__comments{
+				0%{ transform: translate(0px, 30px); opacity: 0; }
+				80%{ transform: translate(0px, 0px); opacity: .5; }
+				100%{ opacity: 1; }
+			}
+		}
+	}
+
+	&__date{
+		@include font(12px, $theme-color, $font-thin);
+		margin: 7px 13px 5px 0;
+
+		@include animation(home-post__date, .55s, linear, 1){
+			@keyframes home-post__date{
+				0%{ transform: translate(0px, 30px); opacity: 0; }
+				80%{  opacity: .5; }
+				100% { transform: translate(0px, 0px); opacity: 1; }
+			}
+		}
+	}
+
+	&__close-btn{
+		@extend %btn-close;	
+
+		&:before, &:after{		
+			@include animation(home-post__close, .75s, linear, 1){
+				@keyframes home-post__close{
+					0%, 70%{ @include size(0, 0); opacity: 0; }
+					100%{  @include size(18px, 4px); opacity: 1; }
+				}
+			}
+		}		
+	}
+}

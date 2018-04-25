@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- adding main.min.css file -->       
+    <link rel="stylesheet" href="css/main.min.css">    
+</head>
+<body>
+
+<div class="global-wrapper">	
+<!-- adding html files -->
+<div class="menu">
+
+	<!-- Header -->
+	<header class="menu-header">
+
+		<!-- Logo -->	
+		<div class="menu-logo">
+			<div class="menu-logo__items">
+				<span class="menu-logo__item first"></span>
+				<span class="menu-logo__item second"></span>
+				<span class="menu-logo__item third"></span>
+			</div>			
+			<a class="menu-logo__name" href="index.html">kappe</a>		
+		</div>
+
+		<!-- Mobile menu -->
+		<div class="menu-mobile js-menu-mobile">
+			<span class="menu-mobile__box js-menu-mobile__box"></span>
+			<span class="menu-mobile__box js-menu-mobile__box"></span>
+			<span class="menu-mobile__box js-menu-mobile__box"></span>
+			<span class="menu-mobile__box js-menu-mobile__box"></span>
+			<span class="menu-mobile__box js-menu-mobile__box"></span>
+			<span class="menu-mobile__box js-menu-mobile__box"></span>
+			<span class="menu-mobile__box js-menu-mobile__box"></span>
+			<span class="menu-mobile__box js-menu-mobile__box"></span>
+			<span class="menu-mobile__box js-menu-mobile__box"></span>
+		</div>
+	</header>	
+	
+	<!-- Menu section - navigation, filter & social-media -->
+	<div class="menu-section js-menu-section">
+
+		<!-- Navigation -->	
+		<nav class="menu-nav js-menu-nav">
+			<a class="menu-nav__link js-menu-nav__item_initial" href="index.html">Home</a>	
+			<a class="menu-nav__link" href="work.html">Work</a>
+			<a class="menu-nav__link" href="about.html">About</a>
+			<a class="menu-nav__link" href="blog.html">Blog</a>
+			<a class="menu-nav__link" href="404.html">Services</a>
+			<a class="menu-nav__link" href="contact.html">Contact</a>
+		</nav>		
+
+		<!-- Filter -->
+		<div class="menu-filter js-menu-filter">
+			<span class="menu-filter__title js-menu-filter__title">Filter</span>
+			<nav class="menu-filter__nav js-menu-filter__nav">			
+				<button class="menu-filter__nav-item active" data-filter="*">All works</button>
+				<button class="menu-filter__nav-item" data-filter=".web-design">web design</button>
+				<button class="menu-filter__nav-item" data-filter=".illustration">illustration</button>
+				<button class="menu-filter__nav-item" data-filter=".photography">photography</button>
+				<button class="menu-filter__nav-item" data-filter=".wallpapers">wallpapers</button>
+				<button class="menu-filter__nav-item" data-filter=".brochures">brochures</button>
+			</nav>
+		</div>	
+
+		<!-- Social-media -->
+		<div class="menu-sm">
+			<span class="menu-sm__title js-menu-sm__title">Find us</span>
+			<ul class="menu-sm__list js-menu-sm__list">
+				<li class="menu-sm__list-item"><a class="menu-sm__link flickr" href="#"></a></li>
+				<li class="menu-sm__list-item"><a class="menu-sm__link google" href="#"></a></li>
+				<li class="menu-sm__list-item"><a class="menu-sm__link twitter" href="#"></a></li>
+				<li class="menu-sm__list-item"><a class="menu-sm__link pinterest" href="#"></a></li>
+				<li class="menu-sm__list-item"><a class="menu-sm__link dribbble" href="#"></a></li>
+				<li class="menu-sm__list-item"><a class="menu-sm__link behance" href="#"></a></li>
+				<li class="menu-sm__list-item"><a class="menu-sm__link facebook" href="#"></a></li>
+			</ul>
+		</div>
+
+		<!-- Copyright -->			
+		<span class="menu-copyright">© 2014 Kappe, All Rights Reserved</span>	
+	</div>
+</div>
+<section class="blog-section">
+	<div class="info">
+	
+		<!-- Info box -->	
+		<a class="info-box js-info-box" href="#">
+			<span class="info-box__frame">
+				<svg class="info-box__icon">
+	    			<use xlink:href="svg/sprite.svg#info-icon"></use>
+				</svg>
+			</span>
+		</a>	
+		
+		<!-- Info list -->
+		<ul class="info-list js-info-list">
+			<li class="info-list__item">
+				<svg class="info-list__icon phone">
+	    			<use xlink:href="svg/sprite.svg#phone-icon"></use>
+				</svg>
+				<a class="info-list__text" href="tel:9930 1234 5679">9930 1234 5679</a>
+			</li>
+			<li class="info-list__item">
+				<svg class="info-list__icon mail">
+	    			<use xlink:href="svg/sprite.svg#envelope-icon"></use>
+				</svg>
+				<a class="info-list__text" href="mailto:contact@domain.com?Subject=Hello%20there">contact@domain.com</a>
+			</li>
+			<li class="info-list__item">
+				<svg class="info-list__icon address">
+	    			<use xlink:href="svg/sprite.svg#home-icon"></use>
+				</svg>
+				<span class="info-list__text">street address example</span>
+			</li>
+		</ul>
+	</div>
+	<div class="blog-grid js-blog-grid">
+
+		<!-- Item #1 -->
+		<div class="blog-grid__item illustration">
+			<div class="blog-grid__item-slider gallery-small js-blog-grid__item-slider">				
+				<img class="blog-grid__item-img gallery-small" src="img/blog/blog-img-1.jpg" alt="">							
+				<img class="blog-grid__item-img gallery-small" src="img/blog/blog-img-2.jpg" alt="">							
+				<img class="blog-grid__item-img gallery-small" src="img/blog/blog-img-3.jpg" alt="">							
+				<img class="blog-grid__item-img gallery-small" src="img/blog/blog-img-4.jpg" alt="">				
+				<img class="blog-grid__item-img gallery-small" src="img/blog/blog-img-5.jpg" alt="">							
+			</div>
+			<a class="blog-grid__item-title" href="#">Gallery Post Example</a>
+			<p class="blog-grid__item-text">A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who</p>
+			<div class="blog-grid__item-info">				
+				<a class="blog-grid__item-comment" href="#">
+					<svg class="blog-grid__item-icon comment">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					3 comments
+				</a>				
+				<a class="blog-grid__item-date" href="#">
+					<svg class="blog-grid__item-icon date">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+				    <time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+
+		<!-- Item #2 -->
+		<div class="blog-grid__item link web-design">
+			<p class="blog-grid__item-text link">Another Post where you can put a link to a specific website</p>
+			<a class="blog-grid__item-link" href="http://www.themeforest.net">http://www.themeforest.net</a>
+		</div>
+
+		<!-- Item #3 -->
+		<div class="blog-grid__item img photography">			
+			<a class="blog-grid__item-circle" data-fancybox="images" href="img/blog/blog-img-6-full.jpg">
+				<svg class="blog-grid__item-arrow">
+    				<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+				</svg>
+			</a>
+			<img class="blog-grid__item-img" src="img/blog/blog-img-6.jpg" alt="">			
+		</div>
+
+		<!-- Item #4 -->
+		<div class="blog-grid__item quote brochures">
+			<q class="blog-grid__item-quote">Logic will get you from A to B. Imagination will take you everywhere.</q>
+			<small class="blog-grid__item-quote-author">Albert Einstein</small>
+		</div>
+
+		<!-- Item #5 -->
+		<div class="blog-grid__item photography">
+			<div class="blog-grid__item-slider gallery-big js-blog-grid__item-slider">
+				<img class="blog-grid__item-img gallery-big" src="img/blog/blog-img-7.jpg" alt="">			
+				<img class="blog-grid__item-img gallery-big" src="img/blog/blog-img-8.jpg" alt="">			
+				<img class="blog-grid__item-img gallery-big" src="img/blog/blog-img-9.jpg" alt="">				
+				<img class="blog-grid__item-img gallery-big" src="img/blog/blog-img-10.jpg" alt="">			
+				<img class="blog-grid__item-img gallery-big" src="img/blog/blog-img-11.jpg" alt="">			
+				<img class="blog-grid__item-img gallery-big" src="img/blog/blog-img-12.jpg" alt="">			
+				<img class="blog-grid__item-img gallery-big" src="img/blog/blog-img-13.jpg" alt="">						
+			</div>
+			<a class="blog-grid__item-title" href="#">Gallery Post Example</a>
+			<p class="blog-grid__item-text">A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who</p>
+			<div class="blog-grid__item-info">				
+				<a class="blog-grid__item-comment" href="#">
+					<svg class="blog-grid__item-icon comment">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					3 comments
+				</a>				
+				<a class="blog-grid__item-date" href="#">
+					<svg class="blog-grid__item-icon date">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+				    <time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+
+		<!-- Item #6 -->
+		<div class="blog-grid__item illustration">
+			<iframe class="blog-grid__item-video" src="https://player.vimeo.com/video/212731897?color=1ab5b3&title=0&byline=0&portrait=0" allowfullscreen></iframe>					
+			<a class="blog-grid__item-title" href="#">Self-hosted video post</a>
+			<p class="blog-grid__item-text">A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who</p>
+			<div class="blog-grid__item-info">				
+				<a class="blog-grid__item-comment" href="#">
+					<svg class="blog-grid__item-icon comment">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					3 comments
+				</a>				
+				<a class="blog-grid__item-date" href="#">
+					<svg class="blog-grid__item-icon date">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+				    <time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+
+		<!-- Item #7 -->
+		<div class="blog-grid__item illustration">
+			<img class="blog-grid__item-img post-small" src="img/blog/blog-img-14.jpg" alt="">
+			<a class="blog-grid__item-title" href="#">Standard post format</a>
+			<p class="blog-grid__item-text">A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who</p>
+			<div class="blog-grid__item-info">				
+				<a class="blog-grid__item-comment" href="#">
+					<svg class="blog-grid__item-icon comment">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					3 comments
+				</a>				
+				<a class="blog-grid__item-date" href="#">
+					<svg class="blog-grid__item-icon date">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+				    <time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+
+		<!-- Item #8 -->
+		<div class="blog-grid__item photography">
+			<img class="blog-grid__item-img post-big" src="img/blog/blog-img-15.jpg" alt="">
+			<a class="blog-grid__item-title" href="#">Standard post format</a>
+			<p class="blog-grid__item-text">A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who</p>
+			<div class="blog-grid__item-info">				
+				<a class="blog-grid__item-comment" href="#">
+					<svg class="blog-grid__item-icon comment">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					3 comments
+				</a>				
+				<a class="blog-grid__item-date" href="#">
+					<svg class="blog-grid__item-icon date">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+				    <time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+
+		<!-- Item #9 -->
+		<div class="blog-grid__item img wallpapers">
+			<a class="blog-grid__item-circle" data-fancybox="images" href="img/blog/blog-img-16-full.jpg">
+				<svg class="blog-grid__item-arrow">
+    				<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+				</svg>
+			</a>
+			<img class="blog-grid__item-img" src="img/blog/blog-img-16.jpg" alt="">
+		</div>
+
+		<!-- Item #10 -->
+		<div class="blog-grid__item illustration">
+			<img class="blog-grid__item-img post-small" src="img/blog/blog-img-17.jpg" alt="">
+			<a class="blog-grid__item-title" href="#">Standard post format</a>
+			<p class="blog-grid__item-text">A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who</p>
+			<div class="blog-grid__item-info">				
+				<a class="blog-grid__item-comment" href="#">
+					<svg class="blog-grid__item-icon comment">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					3 comments
+				</a>				
+				<a class="blog-grid__item-date" href="#">
+					<svg class="blog-grid__item-icon date">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+				    <time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+
+		<!-- Item #11 -->
+		<div class="blog-grid__item photography">
+			<img class="blog-grid__item-img post-small" src="img/blog/blog-img-18.jpg" alt="">
+			<a class="blog-grid__item-title" href="#">Standard post format</a>
+			<p class="blog-grid__item-text">A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who</p>
+			<div class="blog-grid__item-info">				
+				<a class="blog-grid__item-comment" href="#">
+					<svg class="blog-grid__item-icon comment">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					3 comments
+				</a>				
+				<a class="blog-grid__item-date" href="#">
+					<svg class="blog-grid__item-icon date">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+				    <time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+
+		<!-- Item #12 -->
+		<div class="blog-grid__item photography">		
+			<iframe class="blog-grid__item-video" src="https://player.vimeo.com/video/22564317?color=1ab5b3&title=0&byline=0&portrait=0" allowfullscreen></iframe>		
+			<a class="blog-grid__item-title" href="#">Self-hosted video post</a>
+			<p class="blog-grid__item-text">A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who</p>
+			<div class="blog-grid__item-info">				
+				<a class="blog-grid__item-comment" href="#">
+					<svg class="blog-grid__item-icon comment">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					3 comments
+				</a>				
+				<a class="blog-grid__item-date" href="#">
+					<svg class="blog-grid__item-icon date">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+				    <time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>		
+
+		<!-- Item #13 -->
+		<div class="blog-grid__item link web-design">
+			<p class="blog-grid__item-text link">Another Post where you can put a link to a specific website</p>
+			<a class="blog-grid__item-link" href="http://www.themeforest.net">http://www.themeforest.net</a>
+		</div>
+
+		<!-- Item #14 -->
+		<div class="blog-grid__item aside web-design">
+			<a class="blog-grid__item-title aside" href="#">Aside Post Format</a>
+			<p class="blog-grid__item-text aside">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,</p>
+		</div>
+
+		<!-- Item #15 -->
+		<div class="blog-grid__item quote photography">
+			<q class="blog-grid__item-quote">Logic will get you from A to B. Imagination will take you everywhere.</q>
+			<small class="blog-grid__item-quote-author">Albert Einstein</small>
+		</div>
+
+		<!-- Item #16 -->
+		<div class="blog-grid__item brochures">
+			<div class="blog-grid__item-slider gallery-small js-blog-grid__item-slider">
+				<img class="blog-grid__item-img gallery-small" src="img/blog/blog-img-19.jpg" alt="">
+				<img class="blog-grid__item-img gallery-small" src="img/blog/blog-img-20.jpg" alt="">
+				<img class="blog-grid__item-img gallery-small" src="img/blog/blog-img-21.jpg" alt="">
+				<img class="blog-grid__item-img gallery-small" src="img/blog/blog-img-22.jpg" alt="">		
+				<img class="blog-grid__item-img gallery-small" src="img/blog/blog-img-23.jpg" alt="">	
+				<img class="blog-grid__item-img gallery-small" src="img/blog/blog-img-24.jpg" alt="">							
+			</div>
+			<a class="blog-grid__item-title" href="#">Gallery Post Example</a>
+			<p class="blog-grid__item-text">A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who</p>
+			<div class="blog-grid__item-info">				
+				<a class="blog-grid__item-comment" href="#">
+					<svg class="blog-grid__item-icon comment">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					3 comments
+				</a>				
+				<a class="blog-grid__item-date" href="#">
+					<svg class="blog-grid__item-icon date">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+				    <time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+		
+		<!-- Item #17 -->
+		<div class="blog-grid__item img wallpapers">
+			<a class="blog-grid__item-circle" data-fancybox="images" href="img/blog/blog-img-25-full.jpg">
+				<svg class="blog-grid__item-arrow">
+    				<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+				</svg>
+			</a>
+			<img class="blog-grid__item-img" src="img/blog/blog-img-25.jpg" alt="">
+		</div>
+
+		<!-- Item #18 -->
+		<div class="blog-grid__item web-design">
+			<img class="blog-grid__item-img post-big" src="img/blog/blog-img-26.jpg" alt="">
+			<a class="blog-grid__item-title" href="#">Standard post format</a>
+			<p class="blog-grid__item-text">A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who</p>
+			<div class="blog-grid__item-info">				
+				<a class="blog-grid__item-comment" href="#">
+					<svg class="blog-grid__item-icon comment">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					3 comments
+				</a>				
+				<a class="blog-grid__item-date" href="#">
+					<svg class="blog-grid__item-icon date">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+				    <time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+			
+		<!-- Item #19 -->
+		<div class="blog-grid__item brochures">
+			<img class="blog-grid__item-img post-small" src="img/blog/blog-img-27.jpg" alt="">
+			<a class="blog-grid__item-title" href="#">Standard post format</a>
+			<p class="blog-grid__item-text">A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who</p>
+			<div class="blog-grid__item-info">				
+				<a class="blog-grid__item-comment" href="#">
+					<svg class="blog-grid__item-icon comment">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					3 comments
+				</a>				
+				<a class="blog-grid__item-date" href="#">
+					<svg class="blog-grid__item-icon date">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+				    <time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+
+		<!-- Item #20 -->
+		<div class="blog-grid__item brochures">
+			<div class="blog-grid__item-slider gallery-big js-blog-grid__item-slider">
+				<img class="blog-grid__item-img gallery-big" src="img/blog/blog-img-28.jpg" alt="">
+				<img class="blog-grid__item-img gallery-big" src="img/blog/blog-img-29.jpg" alt="">
+				<img class="blog-grid__item-img gallery-big" src="img/blog/blog-img-30.jpg" alt="">	
+				<img class="blog-grid__item-img gallery-big" src="img/blog/blog-img-31.jpg" alt="">
+				<img class="blog-grid__item-img gallery-big" src="img/blog/blog-img-34.jpg" alt="">								
+			</div>
+			<a class="blog-grid__item-title" href="#">Gallery Post Example</a>
+			<p class="blog-grid__item-text">A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who</p>
+			<div class="blog-grid__item-info">				
+				<a class="blog-grid__item-comment" href="#">
+					<svg class="blog-grid__item-icon comment">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					3 comments
+				</a>				
+				<a class="blog-grid__item-date" href="#">
+					<svg class="blog-grid__item-icon date">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+				    <time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+
+		<!-- Item #21 -->
+		<div class="blog-grid__item aside brochures">
+			<a class="blog-grid__item-title aside" href="#">Aside Post Format</a>
+			<p class="blog-grid__item-text aside">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,</p>
+		</div>
+
+		<!-- Item #22 -->
+		<div class="blog-grid__item img wallpapers web-design">
+			<a class="blog-grid__item-circle" data-fancybox="images" href="img/blog/blog-img-35-full.jpg">
+				<svg class="blog-grid__item-arrow">
+    				<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+				</svg>
+			</a>
+			<img class="blog-grid__item-img" src="img/blog/blog-img-35.jpg" alt="">
+		</div>
+
+		<!-- Item #23 -->
+		<div class="blog-grid__item web-design">
+			<iframe class="blog-grid__item-video" src="https://player.vimeo.com/video/182987900?color=1ab5b3&title=0&byline=0&portrait=0" allowfullscreen></iframe>		
+			<a class="blog-grid__item-title" href="#">Self-hosted video post</a>
+			<p class="blog-grid__item-text">A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who</p>
+			<div class="blog-grid__item-info">				
+				<a class="blog-grid__item-comment" href="#">
+					<svg class="blog-grid__item-icon comment">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					3 comments
+				</a>				
+				<a class="blog-grid__item-date" href="#">
+					<svg class="blog-grid__item-icon date">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+				    <time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+
+		<!-- Item #24 -->
+		<div class="blog-grid__item img illustration">
+			<a class="blog-grid__item-circle" data-fancybox="images" href="img/blog/blog-img-36-full.gif">
+				<svg class="blog-grid__item-arrow">
+    				<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+				</svg>
+			</a>
+			<img class="blog-grid__item-img" src="img/blog/blog-img-36.gif" alt="">
+		</div>
+
+		<!-- Item #25 -->
+		<div class="blog-grid__item brochures">
+			<img class="blog-grid__item-img post-small" src="img/blog/blog-img-37.jpg" alt="">
+			<a class="blog-grid__item-title" href="#">Standard post format</a>
+			<p class="blog-grid__item-text">A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who</p>
+			<div class="blog-grid__item-info">				
+				<a class="blog-grid__item-comment" href="#">
+					<svg class="blog-grid__item-icon comment">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					3 comments
+				</a>				
+				<a class="blog-grid__item-date" href="#">
+					<svg class="blog-grid__item-icon date">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+				    <time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+
+		<!-- Item #26 -->
+		<div class="blog-grid__item photography">
+			<img class="blog-grid__item-img post-big" src="img/blog/blog-img-38.jpg" alt="">
+			<a class="blog-grid__item-title" href="#">Standard post format</a>
+			<p class="blog-grid__item-text">A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who</p>
+			<div class="blog-grid__item-info">				
+				<a class="blog-grid__item-comment" href="#">
+					<svg class="blog-grid__item-icon comment">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					3 comments
+				</a>				
+				<a class="blog-grid__item-date" href="#">
+					<svg class="blog-grid__item-icon date">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+				    <time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+
+		<!-- Item #27 -->
+		<div class="blog-grid__item quote illustration">
+			<q class="blog-grid__item-quote">Logic will get you from A to B. Imagination will take you everywhere.</q>
+			<small class="blog-grid__item-quote-author">Albert Einstein</small>
+		</div>
+
+		<!-- Item #28 -->
+		<div class="blog-grid__item brochures">
+			<div class="blog-grid__item-slider gallery-small js-blog-grid__item-slider">			
+				<img class="blog-grid__item-img gallery-small" src="img/blog/blog-img-39.jpg" alt="">						
+				<img class="blog-grid__item-img gallery-small" src="img/blog/blog-img-40.jpg" alt="">						
+				<img class="blog-grid__item-img gallery-small" src="img/blog/blog-img-41.jpg" alt="">						
+				<img class="blog-grid__item-img gallery-small" src="img/blog/blog-img-42.jpg" alt="">							
+			</div>
+			<a class="blog-grid__item-title" href="#">Gallery Post Example</a>
+			<p class="blog-grid__item-text">A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who</p>
+			<div class="blog-grid__item-info">				
+				<a class="blog-grid__item-comment" href="#">
+					<svg class="blog-grid__item-icon comment">
+    					<use xlink:href="svg/sprite.svg#comment-icon"></use>
+					</svg>
+					3 comments
+				</a>				
+				<a class="blog-grid__item-date" href="#">
+					<svg class="blog-grid__item-icon date">
+    					<use xlink:href="svg/sprite.svg#calendar-icon"></use>
+					</svg>
+				    <time>Dec 19, 2013</time>
+				</a>
+			</div>
+		</div>
+
+		<!-- Item #29 -->
+		<div class="blog-grid__item link web-design">
+			<p class="blog-grid__item-text link">Another Post where you can put a link to a specific website</p>
+			<a class="blog-grid__item-link" href="http://www.themeforest.net">http://www.themeforest.net</a>
+		</div>
+
+		<!-- Item #30 -->
+		<div class="blog-grid__item aside photography">
+			<a class="blog-grid__item-title aside" href="#">Aside Post Format</a>
+			<p class="blog-grid__item-text aside">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,</p>
+		</div>
+
+		<!-- Item #31 -->
+		<div class="blog-grid__item img wallpapers">
+			<a class="blog-grid__item-circle" data-fancybox="images" href="img/blog/blog-img-43-full.jpg">
+				<svg class="blog-grid__item-arrow">
+    				<use xlink:href="svg/sprite.svg#arrow-right-icon"></use>
+				</svg>
+			</a>
+			<img class="blog-grid__item-img" src="img/blog/blog-img-43.jpg" alt="">
+		</div>
+	</div>	
+</section>
+</div>
+
+<!-- adding main.min.js file -->	
+<script src="js/main.min.js"></script>
+</body>
+</html>

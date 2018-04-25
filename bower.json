@@ -1,0 +1,28 @@
+{
+  "name": "project",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "3.*",
+    "normalize.css": "*",
+    "isotope-layout": "isotope#^3.0.5",
+    "masonry-layout": "masonry#^4.2.1",
+    "flickity": "^2.0.10",
+    "fancybox": "FancyBox3#^3.2.5",
+    "infinite-scroll": "^3.0.3",
+    "svg4everybody": "^2.1.9"
+  },
+  "devDependencies": {
+    "fakeLoader": "fakeloader#^1.1.0",
+    "scrollreveal": "^3.4.0"
+  }
+}

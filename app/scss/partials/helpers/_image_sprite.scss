@@ -1,0 +1,18 @@
+.menu-bg-active { background-position: -0px -0px; width: 300px; height: 62px; }
+.menu-bg { background-position: -0px -62px; width: 300px; height: 62px; }
+.behance-icon { background-position: -0px -124px; width: 24px; height: 24px; }
+.dribbble-icon { background-position: -24px -124px; width: 24px; height: 24px; }
+.facebook-icon { background-position: -48px -124px; width: 24px; height: 24px; }
+.flickr-icon { background-position: -72px -124px; width: 24px; height: 24px; }
+.google-icon { background-position: -96px -124px; width: 24px; height: 24px; }
+.pinterest-icon { background-position: -120px -124px; width: 24px; height: 24px; }
+.twitter-icon { background-position: -144px -124px; width: 24px; height: 24px; }
+.filter-logo { background-position: -168px -124px; width: 17px; height: 15px; }
+
+.flickr{ @include sprite-bg(-72px -124px); }
+.google{ @include sprite-bg(-96px -124px); }
+.twitter{ @include sprite-bg(-144px -124px); }
+.pinterest{ @include sprite-bg(-120px -124px); }
+.dribbble{ @include sprite-bg(-24px -124px); }
+.behance{ @include sprite-bg(-0px -124px); }
+.facebook{ @include sprite-bg(-48px -124px); }

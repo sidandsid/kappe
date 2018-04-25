@@ -1,0 +1,46 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
+	
+	/* Menu */
+	.menu-nav__item{
+		padding-top: 12px; 		
+	}
+
+	/* Home */
+	.home-grid__item:hover{
+		background-image: none !important;		
+	}
+
+	/* Work */
+	.work-section{
+		outline: none;
+		border: 10px solid #b4b7b8;
+	}
+
+	/* About */
+	.about-section{
+		outline: none;
+		border: 10px solid #b4b7b8;
+	}
+
+	.about-skill__item-line.design:after{
+		width: 94.5%;
+	}
+
+	.about-skill__item-line.development:after{
+		width: 98%;
+	}
+
+	.about-skill__item-line.plugins:after{
+		width: 80.5%;
+	}
+
+	.about-skill__item-line.front-end:after{
+		width: 72.5%;
+	}
+
+	/* Blog */
+	.blog-grid__item-img{
+		width: auto !important;  
+        height: auto !important;         
+	}
+}

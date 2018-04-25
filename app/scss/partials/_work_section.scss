@@ -1,0 +1,258 @@
+.work-section{	
+	@extend %section-main;
+	@extend %section-outline;
+	@extend %section-columned;	
+	background-color: #fff;
+	overflow: hidden;
+}
+
+/* Photography */
+.work-photo{
+	@extend %section-block;
+	padding-top: 30px;
+
+	&__slider{				
+		max-width: 721px;
+		max-height: 560px;
+		margin: 0 auto 20px auto;
+		overflow: hidden;
+		
+		/* adjusting Flickity plugin default controls */
+		.flickity-page-dots{			
+			bottom: 20px;
+			@include break(laptop-m){ left: 35%; }
+
+			& .dot{	
+				@include size(18px, 11px);	
+				background-color: #b6b6b6;
+				border: 1px solid #fff;
+				border-radius: 0;	
+				opacity: 1;	
+				margin: 4px;			
+
+				&:hover{
+					background-color: $theme-color;				
+				}
+			}
+
+			& .dot.is-selected{
+				@include size(22px, 13px);
+				background-color: $theme-color;
+				border-color: #6b6b6b;
+			}
+		}
+	}
+
+	&__img{
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+
+	&__title{
+		@include title($font-light);
+		margin-bottom: 10px;
+	}
+
+	&__text{
+		@extend %text-default;
+
+		&:nth-child(odd){
+			margin-bottom: 25px;
+		}
+
+		&:last-child{
+			@extend %line-bottom;
+		}			
+	}
+}
+
+/* Projects */
+.work-project{	
+	@include flex(row, center);
+	@extend %section-block;
+	padding-top: 18px;	
+
+	&__title{
+		@include title($font-light);
+		width: 100%;		
+	}
+
+	&__item{		
+		max-width: 240px;
+		max-height: 182px;			
+	}
+
+	&__item-img{		
+		object-fit: cover;
+		vertical-align: bottom;
+	}
+}
+
+/* Info */
+.work-info{
+	@extend %section-block;
+	padding: 23px 18px 25px 30px;
+
+	&__title{
+		@include title($font-light);
+		margin-bottom: 10px;
+	}
+
+	&__item{
+		@include flex(row, flex-start);
+		@include size(100%, 60px);
+		@include border(solid, 0 0 1px 0, $bg-color-border);
+	}
+
+	&__item-circle{
+		@include flex(row, center);
+		@include size(30px, 30px);			
+		border: 1px solid $theme-color;
+		border-radius: 50%;
+		margin-right: 16px;
+
+		&.layers{ 
+			@include animation(layers, 4s, linear, infinite); 
+			@keyframes layers{
+				0%, 40%, 60%, 80%{ transform: scale(1, 1); }
+				20%{ transform: scale(1.2, 1.2); }				
+			}
+		}
+
+		&.likes{ 
+			@include animation(likes, 4s, linear, infinite); 
+			@keyframes likes{
+				0%, 20%, 60%, 80%{ transform: scale(1, 1); }
+				40%{ transform: scale(1.2, 1.2); }	
+			}
+		}
+
+		&.date{ 
+			@include animation(date, 4s, linear, infinite); 
+			@keyframes date{
+				0%, 20%, 40%, 80%{ transform: scale(1, 1); }
+				60%{ transform: scale(1.2, 1.2); }	
+			}
+		}
+
+		&.comments{ 
+			@include animation(comments, 4s, linear, infinite); 
+			@keyframes comments{
+				0%, 20%, 40%, 60%{ transform: scale(1, 1); }
+				80%{ transform: scale(1.2, 1.2); }	
+			}
+		}
+	}
+
+	&__item-icon{			
+		@include size(13px, 13px);		
+		fill: $theme-color;
+	}	
+
+	&__item-text{
+		@include font(14px, $text-color-dark, $font-light);
+	}
+}
+
+/* Tags */
+.work-tag{
+	@extend %section-block;
+	display: flex;
+	flex-wrap: wrap;	
+	padding-bottom: 5px;
+
+	&__title{
+		@include title($font-light);
+	}
+
+	&__item{
+		@include font(13px, $text-color-light, $font-light);
+		border: 1px solid $bg-color-border;
+		border-radius: 5px;
+		margin: 0 10px 10px 0;
+		padding: 12px 15px;
+		transition: color .3s ease, border-color .3s ease;
+
+		@include hover{
+			color: $theme-color-hover;
+			border-color: $theme-color-hover;
+			transition: color .3s ease, border-color .3s ease;
+		}
+	}
+}
+
+/* Gallery */
+.work-gallery{	
+	@include flex(row, flex-start);
+	@extend %section-block;	
+	padding-top: 5px;
+	padding-bottom: 20px;
+
+	&__title{	
+		@include title($font-thin);
+	}
+
+	&__item{
+		@include size(78px, 78px);
+		@include flex(row, center);
+		position: relative;
+		display: block;		
+		background-color: #d6d6d6;
+		margin: 0 10px 10px 0;	
+
+		@include hover{
+			.work-gallery__item-img{
+				opacity: 0.5;
+				transition: opacity .3s ease;
+			}
+
+			.work-gallery__item-icon{
+				opacity: 1;
+				transition: opacity .3s ease;
+			}
+		}	
+	}
+
+	&__item-img{		
+		transition: opacity .3s ease;
+	}
+
+	&__item-icon{
+		@include size(30px, 30px);
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;		
+		fill: #fff;
+		opacity: 0;
+		z-index: 1;
+		transition: opacity .3s ease;
+	}
+}
+
+/* Features */
+.work-feature{	
+	@extend %section-block;	
+	margin-bottom: 15px;
+
+	&__title{
+		@include title($font-light);
+		margin-bottom: 10px;		
+	}
+
+	&__list-item{		
+		margin-bottom: 10px;
+	}
+
+	&__list-icon{	
+		@include size(15px, 15px);
+		fill: $text-color-dark;
+	}
+
+	&__list-text{
+		@include font(14px, $text-color-dark, $font-thin);
+	}
+}

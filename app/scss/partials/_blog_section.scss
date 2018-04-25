@@ -1,0 +1,265 @@
+.blog-section{
+	@extend %section-main;
+	position: relative;		
+	background-color: #b4b7b8;
+	@include break-max(tablet-l){ padding-top: 20px; }	
+}
+
+.blog-grid{
+	@include size(100%, 100%);	
+	margin: 0 auto;
+	overflow: hidden;
+
+	&__btn{
+		@extend %btn-clean;
+		@include size(180px, 60px);
+		@include font(20px, #fff, $font-thin);
+		position: absolute;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		margin: 0 auto;		
+		text-transform: uppercase;
+		background-color: $theme-color;
+	}
+
+	&__item{		
+		max-width: 294px;
+		margin-bottom: 25px;
+		overflow: hidden;
+
+		&.link{
+			@include flex(column, center);
+			padding: 36px 28px 36px 28px;
+			background-color: $theme-color;
+		}
+
+		&.quote{
+			@include flex(column, center);
+			background-color: $bg-color-dark;			
+			padding: 30px 30px 25px 30px;
+		}
+
+		&.aside{
+			position: relative;			
+			background-color: $bg-color-dark;
+			padding: 25px 25px 15px 40px;
+
+			&:before{
+				@include size(15px, 100%);
+				position: absolute;
+				content: '';				
+				background-color: $theme-color;
+				top: 0;
+				left: 0;
+			}
+		}
+
+		&.img{
+			position: relative;
+			max-height: 262px;
+			overflow: hidden;
+
+			@include hover{
+				.blog-grid__item-circle{
+					opacity: 1;
+					transition: opacity .3s ease;
+				}
+			}			
+		}
+
+		&.is-hidden{
+			display: none;
+		}			
+	}
+
+	&__item-slider{
+		overflow: hidden;
+
+		&.gallery-small{ max-height: 230px; }
+		&.gallery-big{ max-height: 265px; }
+
+		/* adjusting Flickity plugin default arrow controls */
+		.flickity-prev-next-button{			
+			@include size(43px, 43px);	
+			background-color: $theme-color;
+			border-radius: 0;	
+
+			&.previous{ transform: translate(-10px, -10px); }		
+			&.next{ transform: translate(10px, -10px); }
+
+			& .arrow{			
+				fill: #fff;
+			}
+		}
+	}
+
+	&__item-img{	
+		@include size(294px, 262px);	
+		display: block;											
+		vertical-align: bottom;
+		object-fit: cover;	
+		overflow: hidden;	
+
+		&.gallery-small{ height: 230px; }	
+		&.gallery-big{ height: 265px; }
+		&.post-small{ height: 141px; }
+		&.post-big{ height: 316px; }
+	}
+
+	&__item-title{
+		@include font(18px, #000, $font-light);		
+		display: block;
+		width: 100%;		
+		font-weight: bold;
+		background-color: #fff;
+		padding: 20px 20px 10px 20px;
+
+		&.link{
+			background-color: $bg-color-dark;
+		}
+
+		&.aside{
+			font-size: 21px;
+			font-family: $font-thin;
+			color: #fff;
+			letter-spacing: 1px;
+			padding: 0;
+			margin-bottom: 10px;
+			background-color: $bg-color-dark;
+		}
+	}
+
+	&__item-text{
+		@include font(13px, #9c9c9c, $font-light);
+		display: block;
+		width: 100%;		
+		line-height: 150%;
+		background-color: #fff;
+		padding: 0 20px 20px 20px;
+
+		&.link{
+			font-size: 18px;
+			color: #fff;	
+			text-align: center;	
+			line-height: 120%;	
+			background-color: $theme-color;
+			padding: 0;
+			margin-bottom: 5px;
+		}
+
+		&.aside{
+			font-size: 14px;
+			color: #9c9c9c;
+			padding: 0;
+			background-color: $bg-color-dark;
+		}
+	}
+
+	&__item-info{
+		@include flex(row, flex-start);
+		@include border(solid, 1px 0 0 0, $bg-color-border);
+		background-color: #fff;		
+		padding: 20px;		
+	}
+
+	&__item-icon{
+		@include size(15px, 15px);
+		fill: #818181;
+		transform: translate(0, 3px);
+		margin-right: 5px;
+		transition: fill .2s ease;
+	}
+
+	&__item-comment{
+		@include font(13px, #9a9a9a, $font-light);
+		margin-right: 18px;
+		transition: color .3s ease;
+
+		@include hover{
+			color: $theme-color;
+			transition: color .3s ease;
+
+			.blog-grid__item-icon.comment{
+				fill: $theme-color;
+				transition: fill .2s ease;
+			}
+		}	
+	}
+
+	&__item-date{
+		@include font(13px, #9a9a9a, $font-light);
+		transition: color .3s ease;
+
+		@include hover{
+			color: $theme-color;
+			transition: color .3s ease;
+
+			.blog-grid__item-icon.date{
+				fill: $theme-color;
+				transition: fill .2s ease;
+			}
+		}	
+	}
+
+	&__item-link{
+		@include font(14px, #fff, $font-bolditalic);
+		text-decoration: underline;		
+	}
+
+	&__item-circle{
+		@include flex(row, center);	
+		@include size(60px, 60px);	
+		position: absolute;			
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		z-index: 1;		
+		border: 2px solid #fff;
+		border-radius: 50%;	
+		transition: opacity .3s ease;
+		@include break(tablet-l){ opacity: 0; }
+	}
+
+	&__item-arrow{
+		@include size(16px, 16px);
+		fill: #fff;
+	}
+
+	&__item-quote{
+		@include font(21px, #fff, $font-quote);
+		position: relative;
+		display: block;
+		max-width: 100%;
+		font-style: italic;		
+		text-align: center;
+		line-height: 120%;	
+		margin-bottom: 60px;
+
+		&:before{ content: ''; }
+
+		&:after{
+			position: absolute;
+			content: '“';
+			display: block;
+			font-size: 63px;
+			color: $theme-color;
+			right: 0;
+			left: 0;
+			bottom: -60px;
+			margin: 0 auto;
+		}
+	}
+	
+	&__item-quote-author{
+		@include font(18px, $theme-color, $font-light);
+	}
+
+	&__item-video{
+		@include size(294.5px, 165.5px);
+		border: none;
+		margin-bottom: -3.5px;
+	}
+}

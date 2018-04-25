@@ -1,0 +1,216 @@
+.contact-section{
+	@extend %section-main;	
+	position: relative;	
+	background-color: #a3a3a3;
+	padding: 0;	
+}
+
+/* Google map and info windows */
+.contact-map{	
+	@include size(100%, 100%);
+	min-height: 100vh;
+
+	&__iw{	
+		@include size(300px, 240px);
+		background-color: #fff;		
+		overflow: hidden;	
+		padding: 10px;
+		z-index: 200;
+	}
+
+	&__iw-img{
+		@include size(280px, auto);
+		display: block;		
+		margin-bottom: 15px;
+	}
+
+	&__iw-title{
+		@include font(18px, $text-color-dark, $font-light);
+		margin-bottom: 10px;
+	}
+
+	&__iw-text{
+		@include font(14px, $text-color-dark, $font-light);
+	}
+}
+
+/* Google map info window default class */
+.gm-style-iw{
+	@include size(280px, 240px);
+	position: relative;	
+	min-height: 240px;
+	max-width: 300px;
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+	border-radius: 5px;	
+	margin: 6px 0 0 12px;
+	
+	&:after{
+		@include size(20px, 1px);
+		position: absolute;
+		content: '';		
+		background-color: #fff;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		margin: 0 auto;
+	}
+}
+
+/* Contact us button */
+.contact-us{
+	@include flex(row, space-around);
+	@include size(190px, 60px);
+	position: absolute;
+	top: 0;
+	right: 0;	
+	background-color: $theme-color;
+	transform: translate(65px, 45vh) rotate(-90deg);
+	padding: 15px 20px 8px 20px;	
+
+	&:focus{
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,.5);
+	}
+	
+	&__text{	
+		@include font(16px, #fff, $font-light);
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		cursor: pointer;		
+	}
+
+	&__icon{		
+		@include size(19px, 18px);
+		fill: #fff;	
+		cursor: pointer;
+		margin-bottom: 3px;	
+	}
+}
+
+/* Contact form */
+.contact-form-wrapper{
+	display: none;
+}
+
+.contact-form{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;	
+	width: 95%;
+	max-width: 780px;
+	background-color: #fff;	
+	z-index: 1;
+	padding: 20px;
+	margin: auto;
+
+	@include break(tablet-s){ 
+		max-height: 470px;
+		padding: 25px 30px 30px 30px; 
+	}
+
+	&__title{
+		@include title($font-light);
+
+		&:first-of-type{ margin-bottom: 5px; }		
+	}	
+
+	&__text{		
+		@extend %text-default;
+		@extend %line-bottom;
+		margin-bottom: 45px;
+	}
+	
+	&__form{		
+		@include break-max(tablet-s){ @include flex(column, center); }
+		@include break(tablet-s){ 
+			column-count: 2;
+			column-width: 50%;
+			column-gap: 0;
+		}
+	}
+
+	&__form-item{
+		@include flex(row, flex-start);
+		@include size(100%, 58px);
+		max-width: 346px;
+		border: 1px solid $bg-color-border;
+		margin-bottom: 10px;
+
+		&:focus-within{
+			border-color: $theme-color;		
+		}
+	}
+
+	&__form-circle{
+		@include flex(row, center);		
+		@include size(35px, 35px);		
+		border: 1px solid $theme-color;
+		border-radius: 50%;
+		margin: 0 10px;		
+	}
+
+	&__form-icon{
+		@include size(13px, 13px);
+		fill: $theme-color;
+	}
+
+	&__form-input{
+		@include size(auto, 100%);
+		@include font(14px, $text-color-dark, $font-light);
+		@include border(solid, 0 0 0 1px, $bg-color-border);
+		outline: none;
+		padding-left: 15px;
+
+		&::placeholder{
+			@include font(14px, $text-color-dark, $font-light);
+		}
+
+		&:focus{
+			border-color: $theme-color;		
+		}
+	}
+
+	&__form-text{
+		@include font(14px, $text-color-dark, $font-light);
+		width: 100%;
+		max-width: 365px;
+		min-height: 126px;		
+		border: 1px solid $bg-color-border;
+		outline: none;		
+		box-shadow: none;
+		resize: none;
+		padding: 25px 15px;
+		margin-bottom: 6px;
+
+		&::placeholder{
+			@include font(14px, $text-color-dark, $font-light);
+		}
+
+		&:focus{
+			border-color: $theme-color;
+		}
+	}
+
+	&__form-btn{
+		@extend %btn-clean;
+		@include size(100%, 58px);
+		@include hover-bg($accent-color);	
+		@include font(14px, #fff, $font-light);
+		max-width: 365px;		
+		text-transform: uppercase;
+		background-color: $theme-color;			
+		padding: 0;
+		transition: background-color .3s ease;
+				
+		&:active{ 
+			background-color: $accent-color; 
+			box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+		}
+	}
+
+	&__close-btn{
+		@extend %btn-close;
+		@include break(tablet-l){ display: none; }				
+	}	
+}
